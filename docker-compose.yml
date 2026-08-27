@@ -1,0 +1,9 @@
+services:
+  portfolio:
+    build: .
+    ports: ["3000:3000"]
+  postgres:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_PASSWORD: portfolio
+      POSTGRES_DB: portfolio

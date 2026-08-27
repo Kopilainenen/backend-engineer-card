@@ -1,0 +1,14 @@
+.footerLinks {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.footerLinks a:first-child {
+  color: var(--acid);
+}
+
+@media (max-width: 620px) {
+  .footerLinks a:last-child { display: none; }
+  .footerLinks { gap: 12px; }
+}
