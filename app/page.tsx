@@ -12,7 +12,7 @@ const flow = [
 ];
 export default function Home() {
   return <main>
-    <nav className="nav shell" aria-label="Основная навигация"><a className="brand" href="#top"><span>BE</span> / 2026</a><div className="navLinks"><a href="#stack">Стек</a><a href="#process">Подход</a><a href="https://github.com/Kopilainenen" target="_blank" rel="noreferrer">GitHub ↗</a><a className="navCta" href="mailto:hello@backend.engineer">Обсудить проект ↗</a></div></nav>
+    <nav className="nav shell" aria-label="Основная навигация"><a className="brand" href="#top"><span>BE</span> / 2026</a><div className="navLinks"><a href="#stack">Стек</a><a href="#process">Подход</a><a href="https://github.com/Kopilainenen/backend-engineer-card" target="_blank" rel="noreferrer">GitHub ↗</a><a className="navCta" href="mailto:hello@backend.engineer">Обсудить проект ↗</a></div></nav>
     <section className="hero shell" id="top">
       <div className="availability"><i /> Открыт к сильным backend-задачам</div>
       <h1>Проектирую backend,<br /><em>который не мешает расти.</em></h1>
@@ -22,6 +22,6 @@ export default function Home() {
     <section className="stackSection" id="stack"><div className="shell"><div className="sectionHead"><span>01 / ИНСТРУМЕНТЫ</span><h2>Стек — не список.<br />Это система.</h2><p>Каждая технология закрывает конкретный риск: от неявного контракта до нестабильного релиза.</p></div><div className="stackGrid">{stack.map(([name, desc], index) => <article className="stackItem" key={name}><small>{String(index + 1).padStart(2, '0')}</small><h3>{name}</h3><p>{desc}</p><span>↗</span></article>)}</div></div></section>
     <section className="process shell" id="process"><div className="sectionHead light"><span>02 / ПРОЦЕСС</span><h2>Сначала ясность.<br />Затем скорость.</h2><p>Двигаюсь короткими проверяемыми итерациями — с кодом, который понимает команда, а не только автор.</p></div><div className="flow">{flow.map(([num, title, desc]) => <article key={num}><b>{num}</b><div><h3>{title}</h3><p>{desc}</p></div></article>)}</div></section>
     <section className="cta"><div className="shell"><span>ЕСТЬ ЗАДАЧА?</span><h2>Давайте превратим<br />её в <em>работающий код.</em></h2><a href="mailto:hello@backend.engineer">hello@backend.engineer <b>↗</b></a></div></section>
-    <footer className="shell"><span>© 2026 Backend Engineer</span><span>Type-safe. Production-minded.</span><div className="footerLinks"><a href="https://github.com/Kopilainenen" target="_blank" rel="noreferrer">github.com/Kopilainenen ↗</a><a href="#top">Наверх ↑</a></div></footer>
+    <footer className="shell"><span>© 2026 Backend Engineer</span><span>Type-safe. Production-minded.</span><div className="footerLinks"><a href="https://github.com/Kopilainenen/backend-engineer-card" target="_blank" rel="noreferrer">GitHub / backend-engineer-card ↗</a><a href="#top">Наверх ↑</a></div></footer>
   </main>;
 }
